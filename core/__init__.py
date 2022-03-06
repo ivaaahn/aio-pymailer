@@ -1,1 +1,1 @@
-from .mainconfig import MainConfig
+from .config import MainConfig
