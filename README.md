@@ -1,2 +1,2 @@
 # aio-pymailer
-Asynchronous email sender on 🐍Python(⚡FastApi) and 🐰RabbitMQ
+Asynchronous email sender on 🐍Python + 🐰RabbitMQ
