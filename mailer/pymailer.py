@@ -33,9 +33,9 @@ class PyMailer:
         message = MessageSchema(
             subject=msg.subject,
             recipients=msg.recipients,
-            body=msg.body if not msg.template_body else None,
+            body=msg.regular_body if not msg.formatted_body else None,
             subtype=msg.subtype,
-            template_body=msg.template_body.dict() if msg.template_body else None,
+            template_body=msg.formatted_body.dict() if msg.formatted_body else None,
         )
 
         self.logger.info(str(msg))
